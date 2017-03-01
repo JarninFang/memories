@@ -1,0 +1,21 @@
+{
+  "name": "memories",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jarnin Fang <jarninfang@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jarninfang/memories",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.3"
+  }
+}
