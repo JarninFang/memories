@@ -1,7 +1,19 @@
 extends layout
 
 block content
-  div(ng-controller='HomeCtrl')
-    h1= title
-    p Welcome to #{title}
-    md-button(class='md-primary') New User
+	div(ng-controller='HomeCtrl')
+		md-content(layout='row' layout-padding layout-align='center')
+			span(flex='60' flex-offset='20' flex-gt-sm='40' flex-offset-gt-sm='30')
+				h1(id='title')= title
+				md-card(layout-align='center')
+					md-card-content(layout='column')
+						md-input-container
+							label Email
+							input(type='email')
+						md-input-container
+							label Password
+							input(type='password')
+				<br>
+				<br>
+				md-button(class='md-primary md-raised') New User
+			span(flex='20' flex-gt-sm='30')
